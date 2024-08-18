@@ -73,7 +73,7 @@ http://127.0.0.1:8188/
 #### Now you see ComfyUI over your browser with manager
 - click on manager and click update all!
 
-[Comfy UI + Manager](https://github.com/user-attachments/assets/5b780065-c578-4237-b55e-b9833b72ab2f)
+![Comfy UI + Manager](https://github.com/user-attachments/assets/5b780065-c578-4237-b55e-b9833b72ab2f)
 
 
 - ALL DONE YOU ARE READY NOW
