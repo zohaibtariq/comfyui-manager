@@ -32,7 +32,7 @@ cd ..
 
 ### Create new virtual environment
 ```bash
-python3.12 -m venv ai
+python -m venv ai
 ```
 
 ### Activate newly created virtual environment
@@ -42,17 +42,17 @@ source ai/bin/activate
 
 ### Update pip3
 ```bash
-pip3 install --upgrade pip setuptools
+pip install --upgrade pip setuptools
 ```
 
 ### Install pytorch Nightly (Recommended) or take it from https://pytorch.org/
 ```bash
-pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
+pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
 ```
 
 ### Install requirements
 ```bash
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Run ComfyUI local server with GPU
@@ -62,7 +62,7 @@ python3 main.py --gpu-only
 
 ### Run ComfyUI local server with CPU
 ```bash
-python3 main.py --cpu-only
+python main.py --cpu-only
 ```
 
 ### Follow terminal link
