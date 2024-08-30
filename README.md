@@ -15,20 +15,13 @@ cd ComfyUI
 git clone https://github.com/comfyanonymous/ComfyUI .
 ```
 
-### To install ComfyUI manager go to
-```bash
-cd custom_nodes
-```
+---
 
-### Clone ComfyUI manager repo
-```bash
-git clone https://github.com/ltdrdata/ComfyUI-Manager
-```
+### IMPORTANT NOTE
 
-### Back to main Folder
-```bash
-cd ..
-````
+###### If you have two python versions installed on your OS python 2 and 3 then execute all python commands with python3 if you have only one python version with any version that is >= 3 you can use python as well
+
+---
 
 ### Create new virtual environment
 ```bash
@@ -45,19 +38,62 @@ source ai/bin/activate
 pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
 ```
 
+### Install ComfyUI requirements
+```bash
+pip install -r requirements.txt
+```
+
+### To install ComfyUI manager go to
+```bash
+cd custom_nodes
+```
+
+### Clone ComfyUI manager repo
+```bash
+git clone https://github.com/ltdrdata/ComfyUI-Manager
+```
+
+### Go to ComfyUI-Manager Folder
+```bash
+cd ComfyUI-Manager
+````
+
 ### Install requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run ComfyUI local server with GPU
+### Go back to ComfyUI Folder
 ```bash
-python3 main.py --gpu-only
+cd ../..
+````
+
+### Run ComfyUI local server with GPU
+
+For non mac OS
+
+```bash
+python main.py --gpu-only
+```
+
+For mac
+
+```bash
+PYTORCH_ENABLE_MPS_FALLBACK=1 python main.py --gpu-only
 ```
 
 ### Run ComfyUI local server with CPU
+
+For non mac OS
+
 ```bash
-python main.py --cpu-only
+PYTORCH_ENABLE_MPS_FALLBACK=1 python main.py --cpu-only
+```
+
+For mac
+
+```bash
+PYTORCH_ENABLE_MPS_FALLBACK=1 python main.py --cpu-only
 ```
 
 ### Follow terminal link
