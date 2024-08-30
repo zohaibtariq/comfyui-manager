@@ -40,6 +40,33 @@ source ai/bin/activate
 pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
 ```
 
+###### if you have dedicated gpu of nvidia or amd execute relevant directml or cuda command
+
+#### AMD GPU (not tested)
+```bash
+pip install torch-directml
+```
+
+#### NVIDIA GPU
+
+- Note GPU model and cuda version
+```bash
+nvidia-smi
+nvcc --version
+```
+
+- Using pip
+###### Replace cuXX with the CUDA version you determined above (e.g., cu118 for CUDA 11.8)
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cuXX
+```
+
+- Using conda
+###### Replace XX.X with your CUDA version (e.g., 11.8)
+```bash
+conda install pytorch torchvision torchaudio cudatoolkit=XX.X -c pytorch
+```
+
 ### Install ComfyUI requirements
 ```bash
 pip install -r requirements.txt
