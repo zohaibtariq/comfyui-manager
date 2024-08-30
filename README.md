@@ -40,11 +40,6 @@ python -m venv ai
 source ai/bin/activate
 ```
 
-### Update pip3
-```bash
-pip install --upgrade pip setuptools
-```
-
 ### Install pytorch Nightly (Recommended) or take it from https://pytorch.org/
 ```bash
 pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
