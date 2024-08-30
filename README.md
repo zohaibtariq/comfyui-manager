@@ -65,6 +65,20 @@ cd ComfyUI-Manager
 pip install -r requirements.txt
 ```
 
+---
+## IMPORTANT NOTE: If you want to use GGUF models for low vram or low specs hardware follow this
+
+Make sure you are in the custom_nodes folder
+```
+cd ..
+pip install --upgrade gguf
+git clone git clone https://github.com/city96/ComfyUI-GGUF
+cd ComfyUI-GGUF
+pip install -r requirements.txt
+```
+
+---
+
 ### Go back to ComfyUI Folder
 ```bash
 cd ../..
