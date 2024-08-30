@@ -1,6 +1,6 @@
 # Setup ComfyUI with Manager
 
-### [Follow this first to install git and python](https://github.com/zohaibtariq/youtube-guides/blob/main/setup-git-python.md)
+### [Follow to install git and python](https://github.com/zohaibtariq/youtube-guides/blob/main/setup-git-python.md)
 
 ### Navigate to the folder where you want to install ComfyUI
 ```bash
