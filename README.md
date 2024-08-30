@@ -1,4 +1,4 @@
-# Setup ComfyUI with Manager
+# Setup ComfyUI with Manager & GGUF
 
 ### [Follow to install git and python](https://github.com/zohaibtariq/youtube-guides/blob/main/setup-git-python.md)
 
