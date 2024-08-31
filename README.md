@@ -99,7 +99,7 @@ Make sure you are in the custom_nodes folder
 ```
 cd ..
 pip install --upgrade gguf
-git clone git clone https://github.com/city96/ComfyUI-GGUF
+git clone https://github.com/city96/ComfyUI-GGUF
 cd ComfyUI-GGUF
 pip install -r requirements.txt
 ```
